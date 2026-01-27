@@ -7,7 +7,7 @@ const lora = Lora({
   weight: ["400", "500", "700"]
 })
 
-export const pressStart = Press_Start_2P({
+const pressStart = Press_Start_2P({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-pixel"
