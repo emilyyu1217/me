@@ -29,53 +29,53 @@ function WorkItem({ company, title, duration, location, description }: WorkItemP
 export default function Work() {
   const workExperience = [
     {
-      company: "Boost VC",
-      title: "Investor",
-      duration: "Feb 2024 - Present",
-      location: "San Mateo, California",
-      description: "We're your first believer. The first check into your deep tech startup. Focused on early stage ventures, deep tech, deal sourcing, deal evaluation, due diligence, robotics, and community building."
+      company: "boost vc",
+      title: "investor",
+      duration: "feb 2024 - present",
+      location: "san mateo, california",
+      description: "we're your first believer. the first check into your deep tech startup. focused on early stage ventures, deep tech, deal sourcing, deal evaluation, due diligence, robotics, and community building."
     },
     {
-      company: "NFX",
-      title: "Venture Fellow",
-      duration: "Nov 2023 - Jun 2024",
-      location: "Remote",
-      description: "Part of the 2024 NFX Fellows program, working on deal sourcing and evaluation for one of the top seed-stage venture firms."
+      company: "nfx",
+      title: "venture fellow",
+      duration: "nov 2023 - jun 2024",
+      location: "remote",
+      description: "part of the 2024 nfx fellows program, working on deal sourcing and evaluation for one of the top seed-stage venture firms."
     },
     {
-      company: "E14 Fund",
-      title: "VC Fellow",
-      duration: "Sep 2023 - Mar 2024",
-      location: "Cambridge, Massachusetts",
-      description: "Investing in early-stage deep tech companies across AI, climate technology, healthcare, and industrial automation."
+      company: "e14 fund",
+      title: "vc fellow",
+      duration: "sep 2023 - mar 2024",
+      location: "cambridge, massachusetts",
+      description: "investing in early-stage deep tech companies across ai, climate technology, healthcare, and industrial automation."
     },
     {
-      company: "AlleyCorp Robotics",
-      title: "Venture Fellow",
-      duration: "Feb 2023 - Aug 2023",
-      location: "Remote",
-      description: "Investing in early-stage robotics companies (pre-seed & seed) across industries such as climate/sustainability, construction, food & bev, and logistics. AlleyCorp Robotics invests in companies solving the world's problems through robotics and automation."
+      company: "alleycorp robotics",
+      title: "venture fellow",
+      duration: "feb 2023 - aug 2023",
+      location: "remote",
+      description: "investing in early-stage robotics companies (pre-seed & seed) across industries such as climate/sustainability, construction, food & bev, and logistics. alleycorp robotics invests in companies solving the world's problems through robotics and automation."
     },
     {
-      company: "Amazon Robotics",
-      title: "Sr. Design Engineer",
-      duration: "Apr 2021 - Aug 2021",
-      location: "North Reading, MA",
-      description: "Led design and implementation of robotic systems for Amazon Fulfillment Centers in 10 countries across NA, EU, APAC."
+      company: "amazon robotics",
+      title: "sr. design engineer",
+      duration: "apr 2021 - aug 2021",
+      location: "north reading, ma",
+      description: "led design and implementation of robotic systems for amazon fulfillment centers in 10 countries across na, eu, apac."
     },
     {
-      company: "Amazon Robotics",
-      title: "Solutions Design Engineer",
-      duration: "Nov 2018 - Apr 2021",
-      location: "North Reading, MA",
-      description: "At Amazon Robotics, we apply cutting edge advances in robotics and software to solve real-world challenges that transform our customers' experiences. The Solutions Design Team analyzes and optimizes existing Robotic FC performance, combining those learnings with the latest technologies to design new state of the art robotic material handling systems."
+      company: "amazon robotics",
+      title: "solutions design engineer",
+      duration: "nov 2018 - apr 2021",
+      location: "north reading, ma",
+      description: "at amazon robotics, we apply cutting edge advances in robotics and software to solve real-world challenges that transform our customers' experiences. the solutions design team analyzes and optimizes existing robotic fc performance, combining those learnings with the latest technologies to design new state of the art robotic material handling systems."
     },
     {
-      company: "SirMixABot Inc",
-      title: "Co-Founder, Head of Product",
+      company: "sirmixabot inc",
+      title: "co-founder, head of product",
       duration: "2019 - 2020",
-      location: "Boston, MA / San Francisco, CA",
-      description: "At SirMixABot, we build robotic bartenders for the home, office, and event spaces. MIT delta v 2019 Cohort. Enhanced customer engagement and increased website monthly visits to 3,000+. Led product development from concept to manufacturing. Received $50K+ funding from MIT entrepreneurship programs."
+      location: "boston, ma / san francisco, ca",
+      description: "at sirmixabot, we build robotic bartenders for the home, office, and event spaces. mit delta v 2019 cohort. enhanced customer engagement and increased website monthly visits to 3,000+. led product development from concept to manufacturing. received $50k+ funding from mit entrepreneurship programs."
     }
   ]
 
@@ -86,7 +86,7 @@ export default function Work() {
       {/* Content */}
       <div className="pt-32 pb-16 px-8 md:px-16 lg:px-24">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8">Work</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8">work</h1>
 
           <div>
             {workExperience.map((job, index) => (

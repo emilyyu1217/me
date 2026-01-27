@@ -9,8 +9,8 @@ interface MessageDialogProps {
 }
 
 const QUESTIONS = [
-  "What's your favorite color?",
-  "Who's your favorite entrepreneur?"
+  "what's your favorite color?",
+  "who's your favorite entrepreneur?"
 ]
 
 export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
@@ -87,7 +87,7 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-bold text-white">
-              {isAdmin ? "Messages" : "Send a Message"}
+              {isAdmin ? "messages" : "send a message"}
             </h2>
             <button
               onClick={handleClose}
@@ -103,7 +103,7 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
           {isAdmin ? (
             <div className="space-y-4">
               {messages.length === 0 ? (
-                <p className="text-gray-400 text-sm text-center py-4">No messages yet.</p>
+                <p className="text-gray-400 text-sm text-center py-4">no messages yet.</p>
               ) : (
                 messages.map((msg) => (
                   <div key={msg.id} className="border border-gray-800 rounded p-3">
@@ -125,7 +125,7 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
           ) : showPasswordInput ? (
             <form onSubmit={handlePasswordSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm text-gray-400 mb-2">Password</label>
+                <label className="block text-sm text-gray-400 mb-2">password</label>
                 <input
                   type="password"
                   value={password}
@@ -140,20 +140,20 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                   onClick={() => setShowPasswordInput(false)}
                   className="flex-1 px-4 py-2 text-sm text-gray-400 border border-gray-800 rounded hover:bg-gray-800 transition-colors"
                 >
-                  Back
+                  back
                 </button>
                 <button
                   type="submit"
                   className="flex-1 px-4 py-2 text-sm bg-white text-black rounded hover:bg-gray-200 transition-colors"
                 >
-                  View Messages
+                  view messages
                 </button>
               </div>
             </form>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm text-gray-400 mb-2">Email</label>
+                <label className="block text-sm text-gray-400 mb-2">email</label>
                 <input
                   type="email"
                   value={email}
@@ -163,7 +163,7 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-400 mb-2">Message</label>
+                <label className="block text-sm text-gray-400 mb-2">message</label>
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -173,13 +173,13 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                 />
               </div>
               <div>
-                <label className="block text-sm text-gray-400 mb-2">Pick a question (optional)</label>
+                <label className="block text-sm text-gray-400 mb-2">pick a question (optional)</label>
                 <select
                   value={selectedQuestion}
                   onChange={(e) => setSelectedQuestion(e.target.value)}
                   className="w-full bg-black border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gray-600"
                 >
-                  <option value="">Select a question...</option>
+                  <option value="">select a question...</option>
                   {QUESTIONS.map((q) => (
                     <option key={q} value={q}>{q}</option>
                   ))}
@@ -187,13 +187,13 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
               </div>
               {selectedQuestion && (
                 <div>
-                  <label className="block text-sm text-gray-400 mb-2">Your answer</label>
+                  <label className="block text-sm text-gray-400 mb-2">your answer</label>
                   <input
                     type="text"
                     value={answer}
                     onChange={(e) => setAnswer(e.target.value)}
                     className="w-full bg-black border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gray-600"
-                    placeholder="Type your answer..."
+                    placeholder="type your answer..."
                   />
                 </div>
               )}
@@ -202,14 +202,14 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                 disabled={status === "loading"}
                 className="w-full px-4 py-2 text-sm bg-white text-black rounded hover:bg-gray-200 transition-colors disabled:opacity-50"
               >
-                {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : status === "error" ? "Error" : "Send Message"}
+                {status === "loading" ? "sending..." : status === "success" ? "sent!" : status === "error" ? "error" : "send message"}
               </button>
               <button
                 type="button"
                 onClick={() => setShowPasswordInput(true)}
                 className="w-full text-xs text-gray-600 hover:text-gray-400 transition-colors"
               >
-                Admin
+                admin
               </button>
             </form>
           )}
