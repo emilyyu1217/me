@@ -1,24 +1,10 @@
 import Image from "next/image"
+import { Navigation } from "@/components/Navigation"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 px-8 md:px-16 lg:px-24 py-6">
-        <div className="max-w-7xl mx-auto flex justify-end">
-          <div className="flex space-x-8 text-sm">
-            <a href="/about" className="text-gray-300 hover:text-white transition-colors">
-              about
-            </a>
-            <a href="/work" className="text-gray-300 hover:text-white transition-colors">
-              work
-            </a>
-            <a href="/writing" className="text-gray-300 hover:text-white transition-colors">
-              writing
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="home" />
 
       {/* Main content */}
       <div className="min-h-screen flex items-center justify-center px-8 md:px-16 lg:px-24">

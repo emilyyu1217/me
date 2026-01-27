@@ -10,6 +10,9 @@ const libreBaskerville = Libre_Baskerville({
 export const metadata: Metadata = {
   title: "Emily Yu",
   description: "Deep Tech Investor at Boost VC with expertise in robotics and venture capital.",
+  icons: {
+    icon: "/bjdither.jpg",
+  },
 }
 
 export default function RootLayout({
