@@ -17,6 +17,18 @@ export default function Writing() {
 
           <div className="space-y-4">
             <Link
+              href="/writing/shenzhen"
+              className="flex justify-between items-start border border-gray-800 p-6 hover:border-gray-600 transition-colors"
+            >
+              <div>
+                <h2 className="text-lg font-medium mb-2">why is everyone talking about shenzhen?</h2>
+                <p className="text-gray-500 text-sm">
+                  on hardware ecosystems, iteration speed, and what's changed.
+                </p>
+              </div>
+              <span className="text-gray-500 text-sm whitespace-nowrap ml-6">jan 6, 2026</span>
+            </Link>
+            <Link
               href="/writing/my-thesis"
               className="block border border-gray-800 p-6 hover:border-gray-600 transition-colors"
             >

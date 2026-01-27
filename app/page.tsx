@@ -36,7 +36,7 @@ export default function Home() {
             respectReducedMotion={true}
             loop={true}
             loopDelay={1.6}
-            colorFrom="#7a2a3a"
+            colorFrom="#922B3E"
             colorTo="#ffffff"
           />
           <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6">
