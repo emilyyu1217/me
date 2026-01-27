@@ -52,9 +52,9 @@ export default function About() {
                 "early stage ventures",
                 "design",
                 "psychology",
+                "community building",
                 "deep conversations",
                 "connecting dots",
-                ""
               ].map((skill) => (
                 <span
                   key={skill}
@@ -71,13 +71,14 @@ export default function About() {
             <div className="flex flex-wrap gap-2">
               {[
                 "running",
+                "hiking",
                 "traveling",
                 "making matcha",
                 "tasting dark chocolate",
-                "trying out restaurants",
+                "trying new restaurants",
+                "visiting art museums",
                 "journaling",
                 "snowboarding",
-                ""
               ].map((skill) => (
                 <span
                   key={skill}

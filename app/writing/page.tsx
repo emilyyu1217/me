@@ -12,7 +12,7 @@ export default function Writing() {
           <h1 className="text-3xl md:text-4xl font-bold mb-8">writing</h1>
 
           <p className="text-gray-300 text-sm md:text-base mb-12">
-            insights on deep tech investing, robotics, and the future of automation.
+            thoughts on deep tech investing, robotics, and the future. streams of consciousness.
           </p>
 
           <div className="space-y-4">
