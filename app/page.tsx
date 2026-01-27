@@ -6,6 +6,11 @@ const CircularGallery = dynamic(() => import("@/components/CircularGallery"), {
   loading: () => <div className="w-full h-full bg-black" />
 })
 
+const ASCIIText = dynamic(() => import("@/components/ASCIIText"), {
+  ssr: false,
+  loading: () => <div className="h-[100px] md:h-[120px]" />
+})
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
@@ -14,9 +19,15 @@ export default function Home() {
       {/* Main content */}
       <div className="min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 pt-20">
         <div className="max-w-2xl w-full text-center mb-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            emily yu
-          </h1>
+          <div className="h-[150px] md:h-[200px] lg:h-[250px] mb-4 w-full">
+            <ASCIIText
+              text="emily yu"
+              enableWaves={true}
+              asciiFontSize={10}
+              textFontSize={300}
+              planeBaseHeight={12}
+            />
+          </div>
           <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6">
             deep tech investor at boost vc with a unique blend of hands-on engineering
             experience and venture capital expertise. from leading robotic systems at

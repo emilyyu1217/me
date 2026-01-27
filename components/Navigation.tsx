@@ -5,7 +5,7 @@ import Link from "next/link"
 import { MessageDialog } from "./MessageDialog"
 
 interface NavigationProps {
-  currentPage?: "home" | "about" | "work" | "writing"
+  currentPage?: "home" | "about" | "work" | "projects" | "writing"
 }
 
 export function Navigation({ currentPage = "home" }: NavigationProps) {
@@ -16,8 +16,20 @@ export function Navigation({ currentPage = "home" }: NavigationProps) {
       <nav className="fixed top-0 left-0 right-0 px-8 md:px-16 lg:px-24 py-6 bg-black/80 backdrop-blur-sm z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {currentPage !== "home" ? (
-            <Link href="/" className="text-sm text-gray-300 hover:text-white transition-colors">
-              emily yu
+            <Link href="/" className="text-gray-300 hover:text-white transition-colors" aria-label="Back to home">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
             </Link>
           ) : (
             <div />
@@ -34,6 +46,12 @@ export function Navigation({ currentPage = "home" }: NavigationProps) {
               className={currentPage === "work" ? "text-white" : "text-gray-300 hover:text-white transition-colors"}
             >
               work
+            </Link>
+            <Link
+              href="/projects"
+              className={currentPage === "projects" ? "text-white" : "text-gray-300 hover:text-white transition-colors"}
+            >
+              projects
             </Link>
             <Link
               href="/writing"
