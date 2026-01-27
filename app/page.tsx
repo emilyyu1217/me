@@ -12,13 +12,13 @@ export default function Home() {
           {/* Left side - Text */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Emily Yu
+              emily yu
             </h1>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-md mb-6">
-              Deep tech investor at Boost VC with a unique blend of hands-on engineering
-              experience and venture capital expertise. From leading robotic systems at
-              Amazon Robotics across 10 countries to co-founding SirMixABot at MIT, I partner
-              with founders building the future of robotics, AI, and deep tech.
+              deep tech investor at boost vc with a unique blend of hands-on engineering
+              experience and venture capital expertise. from leading robotic systems at
+              amazon robotics across 10 countries to co-founding sirmixabot at mit, i partner
+              with founders building the future of robotics, ai, and deep tech.
             </p>
             <div className="flex items-center gap-4 justify-center md:justify-start">
               <a

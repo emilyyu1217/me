@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation"
+import Link from "next/link"
 
 export default function Writing() {
   return (
@@ -8,14 +9,22 @@ export default function Writing() {
       {/* Content */}
       <div className="pt-32 pb-16 px-8 md:px-16 lg:px-24">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8">Writing</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8">writing</h1>
 
           <p className="text-gray-300 text-sm md:text-base mb-12">
-            Insights on deep tech investing, robotics, and the future of automation.
+            insights on deep tech investing, robotics, and the future of automation.
           </p>
 
-          <div className="text-gray-500 text-sm border border-gray-800 p-8 text-center">
-            Coming soon.
+          <div className="space-y-4">
+            <Link
+              href="/writing/my-thesis"
+              className="block border border-gray-800 p-6 hover:border-gray-600 transition-colors"
+            >
+              <h2 className="text-lg font-medium mb-2">my thesis</h2>
+              <p className="text-gray-500 text-sm">
+                on the founders i bet on.
+              </p>
+            </Link>
           </div>
         </div>
       </div>
