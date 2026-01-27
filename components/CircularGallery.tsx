@@ -480,15 +480,15 @@ class App {
     const defaultItems = [
       {
         image: `/bjdither.jpg`,
-        text: ''
+        text: 'beijing'
       },
       {
         image: `/mit-hats.jpg`,
-        text: ''
+        text: 'mit'
       },
       {
         image: `/sz-robots.jpg`,
-        text: ''
+        text: 'shenzhen'
       }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
@@ -621,10 +621,10 @@ interface CircularGalleryProps {
 
 export default function CircularGallery({
   items,
-  bend = 3,
+  bend = 2,
   textColor = '#ffffff',
   borderRadius = 0.05,
-  font = 'bold 30px Figtree',
+  font = 'bold 20px Garamond',
   scrollSpeed = 2,
   scrollEase = 0.05
 }: CircularGalleryProps) {
