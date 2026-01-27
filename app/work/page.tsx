@@ -32,50 +32,31 @@ export default function Work() {
       company: "boost vc",
       title: "investor",
       duration: "feb 2024 - present",
-      location: "san mateo, california",
-      description: "we're your first believer. the first check into your deep tech startup. focused on early stage ventures, deep tech, deal sourcing, deal evaluation, due diligence, robotics, and community building."
+      location: "sf / san mateo, california",
+      description: "writing first checks into the most ambitious founders solving the world's hardest problems. $50k-$1M."
     },
     {
-      company: "nfx",
-      title: "venture fellow",
-      duration: "nov 2023 - jun 2024",
-      location: "remote",
-      description: "part of the 2024 nfx fellows program, working on deal sourcing and evaluation for one of the top seed-stage venture firms."
+      company: "venture fellow",
+      title: "@nfx, e14 fund, alleycorp robotics",
+      duration: "feb 2023 - jun 2024",
+      location: "cambridge, massachusetts + remote",
+      description: "invested in early-stage companies across ai, robotics, climate tech, healthcare, saas, and industrial automation. 2024 nfx fellows program, e14 vc fellows 2023-2024."
     },
-    {
-      company: "e14 fund",
-      title: "vc fellow",
-      duration: "sep 2023 - mar 2024",
-      location: "cambridge, massachusetts",
-      description: "investing in early-stage deep tech companies across ai, climate technology, healthcare, and industrial automation."
-    },
-    {
-      company: "alleycorp robotics",
-      title: "venture fellow",
-      duration: "feb 2023 - aug 2023",
-      location: "remote",
-      description: "investing in early-stage robotics companies (pre-seed & seed) across industries such as climate/sustainability, construction, food & bev, and logistics. alleycorp robotics invests in companies solving the world's problems through robotics and automation."
-    },
+    
     {
       company: "amazon robotics",
       title: "sr. design engineer",
-      duration: "apr 2021 - aug 2021",
+      duration: "nov 2018 - aug 2021",
       location: "north reading, ma",
       description: "led design and implementation of robotic systems for amazon fulfillment centers in 10 countries across na, eu, apac."
     },
-    {
-      company: "amazon robotics",
-      title: "solutions design engineer",
-      duration: "nov 2018 - apr 2021",
-      location: "north reading, ma",
-      description: "at amazon robotics, we apply cutting edge advances in robotics and software to solve real-world challenges that transform our customers' experiences. the solutions design team analyzes and optimizes existing robotic fc performance, combining those learnings with the latest technologies to design new state of the art robotic material handling systems."
-    },
+
     {
       company: "sirmixabot inc",
       title: "co-founder, head of product",
       duration: "2019 - 2020",
       location: "boston, ma / san francisco, ca",
-      description: "at sirmixabot, we build robotic bartenders for the home, office, and event spaces. mit delta v 2019 cohort. enhanced customer engagement and increased website monthly visits to 3,000+. led product development from concept to manufacturing. received $50k+ funding from mit entrepreneurship programs."
+      description: "built robotic bartenders for the offices and coworking spaces. mit delta v 2019 cohort. led product development from concept to manufacturing. raised $250k+."
     }
   ]
 

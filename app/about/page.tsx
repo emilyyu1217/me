@@ -12,45 +12,49 @@ export default function About() {
 
           <div className="space-y-6 text-gray-300 text-sm md:text-base leading-relaxed">
             <p>
-              i'm emily, a deep tech investor at boost vc with a unique blend of hands-on
-              engineering experience and venture capital expertise.
+              hi, i'm emily, i’ve always been drawn to building things and understanding 
+              how the world actually works. i like being close to the ground, close to the mess, 
+              and close to the moment where an idea turns into something real.
             </p>
 
             <p>
-              my journey from amazon robotics, where i led robotic systems implementation
-              across 10 countries, to co-founding sirmixabot (mit delta v), has given me
-              invaluable insights into scaling hardware and software solutions.
+            i grew up moving between worlds and learned early how to observe before acting. 
+            being an immigrant kid taught me how to adapt, how to read rooms, and how to build 
+            from the edges rather than the center. that instinct shows up everywhere in my life, 
+            from how i learn, to how i build relationships, to how i choose where to spend my time and energy.
             </p>
 
             <p>
-              combined with my venture experience at prestigious firms like nfx, e14 fund,
-              and alleycorp robotics, i bring a rare technical depth and operational
-              understanding to early-stage investing.
+            today, i spend my time around people who are building hard things. sometimes that means investing early, 
+            sometimes it means hosting dinners, sometimes it means sitting with a founder through a messy decision. 
+            i like being a first believer, especially for people who feel early, unconventional, or underestimated.
             </p>
 
             <p>
-              this makes me an ideal partner for founders building the future of robotics,
-              ai, and deep tech — i don't just evaluate companies, i truly understand the
-              technology and challenges from both an engineering and business perspective.
+            outside of work, i run to think, travel to learn, and coffee shop hop to reset. 
+            i’m curious about how technology, culture, and incentives quietly shape behavior, 
+            and how small decisions compound over time. i try to live with intention, stay close to my values, 
+            and keep choosing paths that feel a little uncomfortable but deeply interesting.
+            </p>
+
+            <p>
+            if you’re someone who builds, questions status quo, or lives at the edge of what’s obvious, 
+            we’ll probably get along.
             </p>
           </div>
 
           <div className="mt-12 pt-8 border-t border-gray-800">
-            <h2 className="text-xl font-bold mb-4">skills & expertise</h2>
+            <h2 className="text-xl font-bold mb-4">interests</h2>
             <div className="flex flex-wrap gap-2">
               {[
-                "early stage ventures",
-                "deep tech",
                 "robotics",
-                "deal sourcing",
-                "due diligence",
-                "product strategy",
-                "logistics management",
-                "warehouse management systems",
-                "ai",
-                "climate technology",
-                "healthcare",
-                "industrial automation"
+                "hardware + software",
+                "early stage ventures",
+                "design",
+                "psychology",
+                "deep conversations",
+                "connecting dots",
+                ""
               ].map((skill) => (
                 <span
                   key={skill}
@@ -61,6 +65,30 @@ export default function About() {
               ))}
             </div>
           </div>
+
+          <div className="mt-12 pt-8 border-t border-gray-800">
+            <h2 className="text-xl font-bold mb-4">in my free time</h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "running",
+                "traveling",
+                "making matcha",
+                "tasting dark chocolate",
+                "trying out restaurants",
+                "journaling",
+                "snowboarding",
+                ""
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 text-xs border border-gray-700 text-gray-400"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
