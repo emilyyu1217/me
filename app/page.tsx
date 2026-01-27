@@ -8,7 +8,7 @@ const CircularGallery = dynamic(() => import("@/components/CircularGallery"), {
 
 const Shuffle = dynamic(() => import("@/components/Shuffle"), {
   ssr: false,
-  loading: () => <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">emily yu</h1>
+  loading: () => <h1 className="text-3xl md:text-4xl lg:text-5xl" style={{ fontFamily: 'var(--font-pixel)' }}>emily yu</h1>
 })
 
 export default function Home() {
@@ -22,8 +22,8 @@ export default function Home() {
           <Shuffle
             text="emily yu"
             tag="h1"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
-            style={{ letterSpacing: '0.05em', lineHeight: '1.4', paddingBottom: '0.1em' }}
+            className="text-3xl md:text-4xl lg:text-5xl mb-6"
+            style={{ fontFamily: 'var(--font-pixel)', letterSpacing: '0.05em', lineHeight: '1.4', paddingBottom: '0.1em' }}
             shuffleDirection="right"
             duration={0.55}
             animationMode="evenodd"
@@ -36,7 +36,7 @@ export default function Home() {
             respectReducedMotion={true}
             loop={true}
             loopDelay={1.6}
-            colorFrom="#922B3E"
+            colorFrom="#ffffff"
             colorTo="#ffffff"
           />
           <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">

@@ -1,10 +1,16 @@
 import type { Metadata } from "next"
-import { Lora } from "next/font/google"
+import { Lora, Press_Start_2P } from "next/font/google"
 import "./globals.css"
 
 const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "700"]
+})
+
+export const pressStart = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pixel"
 })
 
 export const metadata: Metadata = {
@@ -22,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lora.className} font-medium`}>{children}</body>
+      <body className={`${lora.className} ${pressStart.variable} font-medium`}>{children}</body>
     </html>
   )
 }
