@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "emily yu",
   description: "hardware x software, robotics and venture capital.",
   icons: {
-    icon: "/bjdither.jpg",
+    icon: "/favicon glitch.jpg",
   },
 }
 
