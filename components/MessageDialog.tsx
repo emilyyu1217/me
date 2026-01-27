@@ -8,9 +8,16 @@ interface MessageDialogProps {
   onClose: () => void
 }
 
+const QUESTIONS = [
+  "What's your favorite color?",
+  "Who's your favorite entrepreneur?"
+]
+
 export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [selectedQuestion, setSelectedQuestion] = useState("")
+  const [answer, setAnswer] = useState("")
   const [password, setPassword] = useState("")
   const [isAdmin, setIsAdmin] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
@@ -24,13 +31,15 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
     try {
       const { error } = await supabase
         .from("messages")
-        .insert([{ email, message }])
+        .insert([{ email, message, question: selectedQuestion || null, answer: answer || null }])
 
       if (error) throw error
 
       setStatus("success")
       setEmail("")
       setMessage("")
+      setSelectedQuestion("")
+      setAnswer("")
       setTimeout(() => setStatus("idle"), 3000)
     } catch (error) {
       console.error("Error sending message:", error)
@@ -103,6 +112,12 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                     </p>
                     <p className="text-sm text-blue-400 mb-2">{msg.email}</p>
                     <p className="text-sm text-gray-300">{msg.message}</p>
+                    {msg.question && (
+                      <div className="mt-2 pt-2 border-t border-gray-800">
+                        <p className="text-xs text-gray-500">{msg.question}</p>
+                        <p className="text-sm text-green-400">{msg.answer}</p>
+                      </div>
+                    )}
                   </div>
                 ))
               )}
@@ -157,6 +172,31 @@ export function MessageDialog({ isOpen, onClose }: MessageDialogProps) {
                   required
                 />
               </div>
+              <div>
+                <label className="block text-sm text-gray-400 mb-2">Pick a question (optional)</label>
+                <select
+                  value={selectedQuestion}
+                  onChange={(e) => setSelectedQuestion(e.target.value)}
+                  className="w-full bg-black border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gray-600"
+                >
+                  <option value="">Select a question...</option>
+                  {QUESTIONS.map((q) => (
+                    <option key={q} value={q}>{q}</option>
+                  ))}
+                </select>
+              </div>
+              {selectedQuestion && (
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Your answer</label>
+                  <input
+                    type="text"
+                    value={answer}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    className="w-full bg-black border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gray-600"
+                    placeholder="Type your answer..."
+                  />
+                </div>
+              )}
               <button
                 type="submit"
                 disabled={status === "loading"}

@@ -9,5 +9,7 @@ export interface Message {
   id: number
   email: string
   message: string
+  question: string | null
+  answer: string | null
   created_at: string
 }
