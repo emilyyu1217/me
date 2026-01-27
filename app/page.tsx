@@ -39,13 +39,22 @@ export default function Home() {
             colorFrom="#922B3E"
             colorTo="#ffffff"
           />
-          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6">
-            deep tech investor at boost vc with a unique blend of hands-on engineering
-            experience and venture capital expertise. from leading robotic systems at
-            amazon robotics across 10 countries to co-founding sirmixabot at mit, i partner
-            with founders building the future of robotics, ai, and deep tech.
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
+            engineer turned investor @ boost vc. belive in maximizing human potential and growth.
           </p>
-          <div className="flex items-center gap-4 justify-center">
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
+            love the intersection of hardware + software. 
+          </p>
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">  
+            built and shipped robots at amazon robotics. won first robotics world championships.
+          </p>
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
+            got an mba along the way to mix the tizz with the rizz. 
+          </p>
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-8">
+            i partner with bold founders building the future by poking the boundries of reality.
+          </p>
+          <div className="flex items-center gap-6 justify-center">
             <a
               href="https://www.linkedin.com/in/emily-m-yu"
               target="_blank"
