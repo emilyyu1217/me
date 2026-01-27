@@ -13,3 +13,9 @@ export interface Message {
   answer: string | null
   created_at: string
 }
+
+export interface Location {
+  id: number
+  city: string
+  updated_at: string
+}
