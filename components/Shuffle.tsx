@@ -152,8 +152,10 @@ const Shuffle: React.FC<ShuffleProps> = ({
           const parent = ch.parentElement;
           if (!parent) return;
 
-          const w = ch.getBoundingClientRect().width;
-          const h = ch.getBoundingClientRect().height;
+          const rawW = ch.getBoundingClientRect().width;
+          const rawH = ch.getBoundingClientRect().height;
+          const w = Math.ceil(rawW);
+          const h = Math.ceil(rawH);
           if (!w) return;
 
           const wrap = document.createElement('span');
