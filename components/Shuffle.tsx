@@ -152,6 +152,10 @@ const Shuffle: React.FC<ShuffleProps> = ({
           const parent = ch.parentElement;
           if (!parent) return;
 
+          // Skip animation wrapper for space characters
+          const isSpace = ch.textContent === '\u00A0' || ch.textContent === ' ';
+          if (isSpace) return;
+
           const rawW = ch.getBoundingClientRect().width;
           const rawH = ch.getBoundingClientRect().height;
           const w = Math.ceil(rawW);
