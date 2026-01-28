@@ -23,7 +23,7 @@ export default function Home() {
             text="emily yu"
             tag="h1"
             className="text-3xl md:text-4xl lg:text-5xl mb-6"
-            style={{ fontFamily: 'var(--font-pixel)', letterSpacing: '0.05em', lineHeight: '1.4', paddingBottom: '0.1em' }}
+            style={{ fontFamily: 'var(--font-pixel)', lineHeight: '1.4', paddingBottom: '0.1em' }}
             shuffleDirection="right"
             duration={0.55}
             animationMode="evenodd"
