@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Lora, Press_Start_2P } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const lora = Lora({
@@ -28,7 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lora.className} ${pressStart.variable} font-medium`}>{children}</body>
+      <body className={`${lora.className} ${pressStart.variable} font-medium`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
