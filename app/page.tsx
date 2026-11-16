@@ -22,21 +22,23 @@ export default function Home() {
             >
               emily yu
             </h1>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
-              engineer turned investor @ boost vc. belive in maximizing human potential and growth.
-            </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
-              love the intersection of hardware + software.
-            </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
-              built and shipped robots at amazon robotics. won first robotics world championships.
-            </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4">
-              got an mba along the way to mix the tizz with the rizz.
-            </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-8">
-              i partner with bold founders building the future by poking the boundries of reality.
-            </p>
+            <div className="space-y-4 text-sm md:text-base text-gray-300 leading-relaxed">
+              <p>building x investing in hardware and robotics.</p>
+              <p>poking the boundaries of reality.</p>
+              <div>
+                <p>nerding out at the intersection of:</p>
+                <ul className="mt-2 pl-5 space-y-1.5 text-gray-400">
+                  <li className="flex items-center gap-2.5"><span className="text-gray-500 text-[10px]">&#10022;</span> hardware + software</li>
+                  <li className="flex items-center gap-2.5"><span className="text-gray-500 text-[10px]">&#10022;</span> technology + humanity</li>
+                  <li className="flex items-center gap-2.5"><span className="text-gray-500 text-[10px]">&#10022;</span> left + right side of my brain</li>
+                  <li className="flex items-center gap-2.5"><span className="text-gray-500 text-[10px]">&#10022;</span> black + white</li>
+                </ul>
+              </div>
+              <p>built and shipped robots at amazon robotics. won first robotics world championships.</p>
+              <p>got an mba along the way to mix the tizz with the rizz.</p>
+              <p>i partner with bold founders building the future by maximizing their potential and growth.</p>
+            </div>
+            <div className="h-8" />
             <div className="flex items-center gap-6">
               <a
                 href="https://www.linkedin.com/in/emily-m-yu"
@@ -77,6 +79,33 @@ export default function Home() {
           {/* Right: Circular Gallery */}
           <div className="w-full h-[400px] md:h-[500px] lg:h-[600px] relative">
             <CircularGallery
+              items={[
+                { image: "/bjdither.jpg", text: "beijing" },
+                { image: "/mit-hats.jpg", text: "mit" },
+                { image: "/sz-robots.jpg", text: "shenzhen" },
+                { image: "/gallery/baddies.jpg", text: "baddies" },
+                { image: "/gallery/cacao.jpg", text: "cacao" },
+                { image: "/gallery/community.jpg", text: "community" },
+                { image: "/gallery/diani-beach.jpg", text: "diani beach" },
+                { image: "/gallery/dj.jpg", text: "dj" },
+                { image: "/gallery/ecuador.jpg", text: "ecuador" },
+                { image: "/gallery/humanoid-talk.jpg", text: "humanoid talk" },
+                { image: "/gallery/israel.jpg", text: "israel" },
+                { image: "/gallery/jiaxing.jpg", text: "jiaxing" },
+                { image: "/gallery/kenya.jpg", text: "kenya" },
+                { image: "/gallery/lisbon.jpg", text: "lisbon" },
+                { image: "/gallery/prague.jpg", text: "prague" },
+                { image: "/gallery/sailing.jpg", text: "sailing" },
+                { image: "/gallery/saudi.jpg", text: "saudi" },
+                { image: "/gallery/seattle.jpg", text: "seattle" },
+                { image: "/gallery/snowboard.jpg", text: "snowboard" },
+                { image: "/gallery/speaking.jpg", text: "speaking" },
+                { image: "/gallery/stanford.jpg", text: "stanford" },
+                { image: "/gallery/stinky-tofu.jpg", text: "stinky tofu" },
+                { image: "/gallery/taj.jpg", text: "taj" },
+                { image: "/gallery/verona.jpg", text: "verona" },
+                { image: "/gallery/women!.jpg", text: "women!" },
+              ]}
               bend={1}
               textColor="#ffffff"
               borderRadius={0.05}
